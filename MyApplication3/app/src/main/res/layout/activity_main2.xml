@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity2">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/countdown_animation"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:layout_centerInParent="true"
+        android:translationY="-300px"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/countdown_animation" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/container"
+        android:translationY="1020px" />
+
+    <ImageView
+        android:id="@+id/like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:visibility="invisible"
+        android:src="@drawable/like" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/replay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:onClick="returnH"
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        android:translationY="-200dp"
+        android:visibility="invisible"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/replay" />
+
+    <ImageView
+        android:id="@+id/dislike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:visibility="invisible"
+        android:src="@drawable/dislike" />
+
+    <ImageView
+        android:id="@+id/square"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        android:visibility="invisible"
+        android:scaleType="fitCenter"
+        android:src="@drawable/carer" />
+
+    <ImageView
+        android:id="@+id/triangle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        android:visibility="invisible"
+        android:scaleType="fitCenter"
+        android:src="@drawable/triangle" />
+
+    <ImageView
+        android:id="@+id/rond2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        android:visibility="invisible"
+        android:scaleType="fitCenter"
+        android:src="@drawable/rond" />
+
+    <Button
+        android:id="@+id/carer"
+        android:layout_width="250px"
+        android:layout_height="250px"
+        android:background="@drawable/button"
+        android:translationX="100px"
+        android:translationY="1400px"
+        android:onClick="add1"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/triangle"
+        android:layout_width="290px"
+        android:layout_height="290px"
+        android:background="@drawable/button2"
+        android:translationX="400px"
+        android:translationY="1385px"
+        android:onClick="add2"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/rond"
+        android:layout_width="270px"
+        android:layout_height="270px"
+        android:background="@drawable/button3"
+        android:translationX="730px"
+        android:translationY="1385px"
+        android:onClick="add3"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/bien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/bien"
+        android:translationY="-100px"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/faux"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/faux"
+        android:translationY="-100px"
+        android:visibility="invisible" />
+
+</RelativeLayout>
